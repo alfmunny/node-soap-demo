@@ -10,7 +10,7 @@ The soap service uses the [node-soap](https://github.com/vpulim/node-soap) modul
 ### Node.js
 Install node.js by following the [official website](http://nodejs.org/download/).
 
-## Install and Setup
+## Install and run
 
 Fetch the project
 
