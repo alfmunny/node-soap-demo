@@ -1,7 +1,7 @@
 node-soap-demo
 ==============
 
-It's a demo drafts and tests for a ocpp based server and client with [node.js](http://nodejs.org/).
+It's a simple demo draft for a ocpp based server and client with [node.js](http://nodejs.org/).
 
 The soap service uses the [node-soap](https://github.com/vpulim/node-soap) module.
 
