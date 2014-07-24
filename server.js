@@ -4,14 +4,14 @@ var ocppCentralSystemService = {
   CentralSystemService: {
     CentralSystemServiceSoap12: {
       Heartbeat: function(args) {
-									console.log("/Heartbeat");
-									var dateTime = new Date();
-									console.log(dateTime.toString());
-         return { currentTime: dateTime.toString() };
-      },
+        console.log("/Heartbeat");
+        var dateTime = new Date();
+        console.log(dateTime.toString());
+   			return { currentTime: dateTime.toString() };
+			},
 			Authorize: function(args) {
-										 console.log("/Authorize");
-										 return { idTagInfo: {} };
+		    console.log("/Authorize");
+			  return { idTagInfo: {} };
 			}
     }
   }
