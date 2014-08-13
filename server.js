@@ -8,15 +8,16 @@ var ocppCentralSystemService = {
     CentralSystemServiceSoap12: {
       BootNotification: function (args) {
         console.log("/BootNotification");
+        var dateTime = new Date();
+        OCPP.wsdl['BootNotificationResponse']['currentTime'] = dateTime.toString();
         return OCPP.wsdl['BootNotificationResponse'];
       },
 
       Heartbeat: function(args) {
         console.log("/Heartbeat");
         var dateTime = new Date();
-        console.log(dateTime.toString());
-        OCPP.wsdl['HeartbeatResponse']['currentTime'] = dateTime;
-   			return OCPP.wsdl['HeartbeatResponse'];
+        OCPP.wsdl['HeartbeatResponse']['currentTime'] = dateTime.toString();
+        return OCPP.wsdl.HeartbeatResponse;
 			},
 
       StartTransaction: function (args) {

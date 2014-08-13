@@ -18,10 +18,10 @@ var OCPP = {
       hearbeatInterval: 1200
     },
 
-    HeartBeatRequest: {
+    HeartbeatRequest: {
     },
 
-    HeartBeatResponse: {
+    HeartbeatResponse: {
       currentTime: ''
     },
 
