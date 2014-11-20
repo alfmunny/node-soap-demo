@@ -97,18 +97,32 @@ var OCPP = {
       values: ''
     },
 
-    MeterValuesResponse: {},
+    MeterValuesResponse: {
+      status: 'no data'
+    },
 
     DataTransferRequest: {
       vendorId: 'fr.tm.cnr',
       messageId: 'GetChargeInstruchtion',
-      data: ''
+      data: 'no data'
     },
 
     DataTransferRequest: {
       status: 'Accepted',
       data: '{"transactionId":1, "maxPower":3, "expiration":' +
         '"2015-05-05", "userWarning": false}'
+    },
+
+    StatusNotificationResponse: {
+      result: 'no data'
+    },
+
+    FirmwareStatusNotificationResponse: {
+      result: 'no data'
+    },
+
+    DiagnosticsStatusNotificationResponse: {
+      result: 'no data'
     }
   }
 };

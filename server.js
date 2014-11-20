@@ -31,7 +31,7 @@ var ocppCentralSystemService = {
       },
 
       MeterValues: function (args) {
-        console.log("/MeterValues");
+        console.log("/MeterValues: this operation contains no return data.");
    			return OCPP.wsdl['MeterValues'];
       },
 
@@ -44,6 +44,26 @@ var ocppCentralSystemService = {
 		    console.log("/Authorize");
         var expiryData = new Date('05-05-2015');
 			  return OCPP.wsdl['AuthorizeResponse'];
+      },
+
+      StatusNotification: function(args) {
+        console.log("/StatusNotification: this operation contains no return data.");
+        return OCPP.wsdl['StatusNotification'];
+      },
+
+      FirmwareStatusNotification: function(args) {
+        console.log("/FirwareStatusNotification: this operation contains no return data.");
+        return OCPP.wsdl['FirwareStatusNotification'];
+      },
+
+      DiagnosticsStatusNotification: function(args) {
+        console.log("/DiagnosticsStatusNotification: this operation contains no return data.");
+        return OCPP.wsdl['DiagnosticsStatusNotification'];
+      },
+
+      DataTransfer: function(args) {
+        console.log("/DataTransfer: this operation contains no return data.");
+        return OCPP.wsdl['DataTransfer'];
       }
     }
   }
